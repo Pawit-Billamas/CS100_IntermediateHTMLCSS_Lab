@@ -46,6 +46,12 @@ nav ul li {
   - Adjust the `display` property so that it displays list items vertically
   - Adjust the margin so that it looks appropriate (more spacing between list items).
 ```css
+nav ul li {
+    /*display: inline-block;
+    margin: 0 15px;*/
+    display: block;
+    margin: 15px 0;
+}
 ```
 
 - Modify the CSS `nav` style:
@@ -54,24 +60,56 @@ nav ul li {
    - Make the sidebar extend to the full height of the viewport.
    - Add padding to the top of the navigation content.
 ```css
+nav {
+    background-color: #ffa41b;
+    /*padding: 10px;*/
+    text-align: center;
+    float: left;
+    width: 20%;
+    height: 100vh;
+    padding-top: 10px;
+}
+
 ```
 
 ---
 ### Step 3: Adjust the Main Content Width
 - Modify the CSS `main` section to ensure the main content takes up the remaining width of the page and floats to the right of the sidebar.
 ```css
+main {
+    padding: 20px;
+    float: right;
+    width: 70%;
+}
 ```
 
 ---
 ### Step 4: Styling the Footer
 - Since the `nav` and `main` sections are floated, ensure the footer stays below them by clearing the floats by adding relevant CSS styles to achieve this.
 ```css
+footer {
+    background-color: #ffe066;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
 ```
 
 ---
 ### Step 5: Keeping the Navigation Bar Visible
 - Add CSS to position the `nav` element so that the navigation stays fixed while scrolling.
 ```css
+nav {
+    background-color: #ffa41b;
+    /*padding: 10px;*/
+    text-align: center;
+    float: left;
+    width: 20%;
+    height: 100vh;
+    padding-top: 10px;
+    position: sticky;
+    top: 0;
+}
 ```
 
 ---
